@@ -1,0 +1,34 @@
+<html>
+    <head>
+        <title>Deploy Ml model</title>
+    </head>
+    <body>
+        <form action="predict" method="post">
+            {% csrf_token %}
+				
+					<span class="label-input100">Full Name :</span>
+					<input class="input100" type="text" name="name" placeholder="Enter full name" ><br><br>
+				
+					<span class="label-input100">Your Age :</span>
+					<input class="input100" type="text" name="age" placeholder="Enter Your Age"><br><br>
+	
+					<span class="label-input100">Mean_Radius :</span>
+					<input class="input100" type="text" name="radius" placeholder="Enter Mean Radius"><br><br>
+					
+					<span class="label-input100" style="left:-120px;">Mean_Texture :</span>
+					<input class="input100" type="text" name="texture" placeholder="Enter Mean Texture"><br><br>
+			
+					<span class="label-input100" style="left:-130px;">Mean_Perimeter :</span>
+					<input class="input100" type="text" name="perimeter" placeholder="Enter Mean Perimeter"><br><br>
+				
+					<span class="label-input100">Mean_Area :</span>
+					<input class="input100" type="text" name="area" placeholder="Enter Mean Area"><br><br>
+					
+					<span class="label-input100" style="left:-150px;">Mean_Smoothness :</span>
+					<input class="input100" type="text" name="smoothness" placeholder="Enter Mean Smoothness"><br><br>
+                    
+                    <button class="contact100-form-btn">Submit</button>
+			
+        </form>
+    </body>
+</html>
